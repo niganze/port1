@@ -1,6 +1,6 @@
 
 import HH from '../assets/home.png';
-import LL from '../assets/figma.png'
+// import LL from '../assets/home.png'
 function Home() {
   return (
     <main className="pt-16 bg-gray-50">
@@ -34,7 +34,7 @@ function Home() {
       </div>
 
       {/* Logos Section */}
-      <div className="mt-16 py-10 bg-white rounded-full">
+      {/* <div className="mt-16 py-10 bg-white rounded-full">
         <div className="container mx-auto flex justify-around items-center space-x-4">
           <img src={LL} alt="99designs" className="h-12 w-auto" />
           <img src={LL} alt="colorlib" className="h-12 w-auto" />
@@ -42,7 +42,7 @@ function Home() {
           <img src={LL} alt="Forbes" className="h-12 w-auto" />
           <img src={LL} alt="dribbble" className="h-12 w-auto" />
         </div>
-      </div>
+      </div> */}
     </main>
   );
 }
