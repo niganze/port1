@@ -21,7 +21,7 @@ function Home() {
             Additionally, I can handle deployment tasks.
           </p>
           <button className="mt-8 px-8 py-3 bg-gradient-to-r from-purple-400 to-teal-300 text-white font-semibold rounded-full shadow-lg hover:opacity-90 transition duration-300">
-            Download CV
+            Hire me
           </button>
         </div>
 
