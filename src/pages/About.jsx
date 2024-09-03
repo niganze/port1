@@ -1,12 +1,13 @@
 
-import LL from '../assets/home.png'
+
+import BB from '../assets/about.jpeg'
 function About() {
   return (
     <div className="flex flex-col md:flex-row items-center p-8 bg-white">
       {/* Image Section */}
       <div className="md:w-1/2 flex justify-center mb-6 md:mb-0">
         <img
-          src={LL}
+          src={BB}
           alt="About Myself"
           className="rounded-lg shadow-lg w-full max-w-sm"
         />
@@ -18,7 +19,6 @@ function About() {
         <div className="w-12 h-1 bg-red-500 mb-4"></div>
         <p className="text-gray-600 mb-6">
           Inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. Inappropriate behavior is often laughed. Inappropriate behavior is often laughed off as “boys will be boys,” women face higher.
-
           That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. Inappropriate behavior is often laughed.
         </p>
         <div className="flex space-x-4 mt-6">

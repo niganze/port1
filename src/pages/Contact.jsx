@@ -14,8 +14,8 @@ function Contact() {
                 </svg>
               </div>
               <div>
-                <h4 className="text-lg font-semibold text-gray-800">Binghamton, New York</h4>
-                <p className="text-gray-600">4343 Hinkle Deegan Lake Road</p>
+                <h4 className="text-lg font-semibold text-gray-800">Kigali, Rwanda</h4>
+                <p className="text-gray-600">KN 7 Ave, Kigali</p>
               </div>
             </div>
             <div className="flex items-start">
@@ -25,7 +25,7 @@ function Contact() {
                 </svg>
               </div>
               <div>
-                <p className="text-gray-600"><span className="font-semibold">Phone:</span> 00 (958) 9865 562</p>
+                <p className="text-gray-600"><span className="font-semibold">Phone:</span> +250783943932</p>
                 <p className="text-gray-500">Mon to Fri 9am to 6pm</p>
               </div>
             </div>
@@ -37,7 +37,7 @@ function Contact() {
                 </svg>
               </div>
               <div>
-                <p className="text-gray-600"><span className="font-semibold">Email:</span> support@colorlib.com</p>
+                <p className="text-gray-600"><span className="font-semibold">Email:</span> niganzealain@gmail.com</p>
                 <p className="text-gray-500">Send us your query anytime!</p>
               </div>
             </div>

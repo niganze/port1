@@ -26,8 +26,8 @@ function Footer() {
             {/* Contact & Social Links */}
             <div>
               <h4 className="text-lg font-semibold mb-4">Contact</h4>
-              <p className="text-gray-400">Email: alain@example.com</p>
-              <p className="text-gray-400">Phone: +250 123 456 789</p>
+              <p className="text-gray-400">Email: niganzealain@gmail.com</p>
+              <p className="text-gray-400">Phone: +250783943932</p>
               
               <div className="mt-4">
                 <h4 className="text-lg font-semibold mb-4">Follow Me</h4>
