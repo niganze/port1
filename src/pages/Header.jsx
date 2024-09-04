@@ -44,7 +44,7 @@ function Header() {
 
         {/* Navigation Links for Large Screens */}
         <nav className="hidden md:flex space-x-6 font-semibold items-center">
-          <a href="#"  onClick={closeModal} className="text-white hover:text-[#32F6FF] transition duration-300">Home</a>
+          <a href="#"   className="text-white hover:text-[#32F6FF] transition duration-300">Home</a>
           <a href="#" className="text-white hover:text-[#32F6FF] transition duration-300">About</a>
           <a href="#" className="text-white hover:text-[#32F6FF] transition duration-300">Portfolio</a>
           <a href="#" className="text-white hover:text-[#32F6FF] transition duration-300">Pages</a>
