@@ -3,9 +3,9 @@ function Header() {
     <header className="bg-[#0a0b1e] fixed top-0 left-0 w-full z-10 shadow-lg">
       <div className="container mx-auto flex justify-between items-center p-4 px-6">
         {/* Logo Section */}
-        <div className="flex items-center">
-          <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-[#5B4EFF] to-[#32F6FF] rounded-full">
-            <span className="text-white text-lg font-extrabold">AN</span>
+        <div className="flex items-center ">
+          <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-[#5B4EFF] to-[#32F6FF] rounded-full animate-spin">
+            <span className="text-white text-lg font-extrabold ">AN</span>
           </div>
           <span className="ml-2 text-xl text-white font-semibold">NIGANZE</span>
         </div>
