@@ -6,7 +6,7 @@ function Project() {
   return (
     <div className="p-4 md:p-8 lg:p-12 mt-8 bg-[#0a0b1e] text-white min-h-screen">
       {/* Title Section */}
-      <div className="text-center mb-12 animate-fade-in">
+      <div className="text-center mb-12 animate-fade-in mt-6">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-fade-in-up">Projects</h2>
         <div className="w-16 h-1 bg-gradient-to-r from-[#5B4EFF] to-[#32F6FF] mx-auto mb-6 animate-width-grow"></div>
         <p className="text-gray-400 max-w-2xl mx-auto animate-fade-in-up delay-2">
