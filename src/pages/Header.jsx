@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { Link } from 'react-router-dom';
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -44,11 +44,11 @@ function Header() {
 
         {/* Navigation Links for Large Screens */}
         <nav className="hidden md:flex space-x-6 font-semibold items-center">
-          <a href="#"   className="text-white hover:text-[#32F6FF] transition duration-300">Home</a>
-          <a href="#" className="text-white hover:text-[#32F6FF] transition duration-300">About</a>
-          <a href="#" className="text-white hover:text-[#32F6FF] transition duration-300">Portfolio</a>
-          <a href="#" className="text-white hover:text-[#32F6FF] transition duration-300">Pages</a>
-          <a href="#" className="text-white hover:text-[#32F6FF] transition duration-300">Blog</a>
+          <Link to="/" className="text-white hover:text-[#32F6FF] transition duration-300">Home</Link>
+          <Link to="/" className="text-white hover:text-[#32F6FF] transition duration-300">About</Link>
+          <Link to="/projects" className="text-white hover:text-[#32F6FF] transition duration-300">Projects</Link>
+          
+          <Link to="/blog" className="text-white hover:text-[#32F6FF] transition duration-300">Blog</Link>
           <button className="ml-4 px-5 py-2 bg-gradient-to-r from-[#5B4EFF] to-[#32F6FF] text-white rounded-full hover:opacity-90 transition-opacity duration-300">Login</button>
         </nav>
       </div>
@@ -74,11 +74,11 @@ function Header() {
               </svg>
             </button>
             <nav className="flex flex-col space-y-6 font-semibold items-center">
-              <a href="#"  onClick={closeModal} className="text-white text-xl hover:text-[#32F6FF] transition duration-300">Home</a>
-              <a href="#" onClick={closeModal} className="text-white text-xl hover:text-[#32F6FF] transition duration-300">About</a>
-              <a href="#" onClick={closeModal} className="text-white text-xl hover:text-[#32F6FF] transition duration-300">Portfolio</a>
-              <a href="#" onClick={closeModal} className="text-white text-xl hover:text-[#32F6FF] transition duration-300">Pages</a>
-              <a href="#" onClick={closeModal} className="text-white text-xl hover:text-[#32F6FF] transition duration-300">Blog</a>
+              <Link to="#"  onClick={closeModal} className="text-white text-xl hover:text-[#32F6FF] transition duration-300">Home</Link>
+              <Link to="#" onClick={closeModal} className="text-white text-xl hover:text-[#32F6FF] transition duration-300">About</Link>
+              <Link to="/projects" onClick={closeModal} className="text-white text-xl hover:text-[#32F6FF] transition duration-300">Projects</Link>
+             
+              <Link to="#" onClick={closeModal} className="text-white text-xl hover:text-[#32F6FF] transition duration-300">Blog</Link>
               <button className="px-5 py-2 bg-gradient-to-r from-[#5B4EFF] to-[#32F6FF] text-white rounded-full hover:opacity-90 transition-opacity duration-300">Login</button>
             </nav>
           </div>

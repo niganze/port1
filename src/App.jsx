@@ -1,22 +1,18 @@
-import Footer from "./Footer";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Header from "./pages/Header";
-import History from "./pages/History";
-import Home from "./pages/Home";
-import Service from "./pages/Service";
-
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Welcome from "./Welcome";
+import Layout from "./pages/Layout";
+import Project from "./pages/Projects";
 export default function App() {
   return (
-  <div>
-    <Header/>
-    <Home/>
-    <About/>
-    <History/>
-    <Service/>
-    <Contact/>
-    <Footer/>
-  </div>
+  <>
+   <BrowserRouter>
+     <Routes>
+     <Route path="/" element={<Layout/>}>
+     <Route index element={<Welcome/>}/>
+     <Route path="/projects" element={<Project/>}/>
+      </Route>
+     </Routes>
+   </BrowserRouter>
+  </>
   )
 }

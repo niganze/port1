@@ -46,7 +46,7 @@ function About() {
   download="Alain_Niganze_Resume.pdf"
 >
   <button className="px-6 py-2 bg-[#5B4EFF] text-white rounded-full hover:bg-[#32F6FF] transition-colors duration-300">
-    Resume
+     Download cv
   </button>
 </a>
 
