@@ -1,4 +1,4 @@
-import ProjectImage from "../assets/project.jpeg"; // Example project image
+import ProjectImage from "../assets/project.jpg"; // Example project image
 import { FaReact, FaGithub } from "react-icons/fa"; // React icons for logos
 import { SiTailwindcss } from "react-icons/si"; // Tailwind CSS icon
 
@@ -43,7 +43,7 @@ function Project() {
             <div className="flex space-x-4">
               {/* Preview Button */}
               <a
-                href="https://project-preview-link.com" // Replace with actual link
+                href="https://musa-website.vercel.app/" // Replace with actual link
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-4 md:px-6 py-2 bg-[#5B4EFF] text-white rounded-full hover:bg-[#32F6FF] transition-colors duration-300"
@@ -53,7 +53,7 @@ function Project() {
 
               {/* GitHub Button */}
               <a
-                href="https://github.com/username/project-repo" // Replace with actual GitHub repo link
+                href="https://github.com/niganze/healthcare" // Replace with actual GitHub repo link
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-4 md:px-6 py-2 border border-[#5B4EFF] rounded-full text-[#5B4EFF] hover:bg-[#5B4EFF] hover:text-white transition-colors duration-300 flex items-center"

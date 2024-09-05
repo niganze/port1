@@ -1,7 +1,7 @@
 function Contact() {
   return (
     <div className="bg-[#0a0b1e] py-16 text-white">
-      <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 mt-9">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
 
           {/* Contact Information */}
