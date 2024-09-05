@@ -7,7 +7,7 @@ function Home() {
         {/* Text Section */}
         <div className="flex-1 text-center md:text-left animate-fade-in">
           <h1 className="text-xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-blue-500 to-teal-300 animate-gradient-slide">
-            Hello, I'm Alain Niganze,
+            Hello, I m Alain Niganze,
           </h1>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mt-4 animate-fade-in-up delay-2">
             Software Engineer

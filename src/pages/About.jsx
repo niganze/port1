@@ -21,11 +21,11 @@ function About() {
           As a dedicated software engineer, I bring a strong problem-solving
           mindset and technical proficiency to every project. With hands-on
           experience in Full-stack Engineering, I excel in collaborative
-          environments. With a passion for frontend development, I've dedicated
+          environments. With a passion for frontend development, I ve dedicated
           my efforts to crafting seamless and visually stunning user interfaces.
           <br/><br/>
           <span className="text-white font-semibold">
-            Let's connect and discuss how my skills can contribute to the success
+            Let us connect and discuss how my skills can contribute to the success
             of your projects. I build awesome products using:
           </span> 
           <br/><br/>
