@@ -4,9 +4,9 @@ import { FaUser, FaRegCalendarAlt, FaEye, FaComment } from "react-icons/fa";
 
 function Blogs() {
   return (
-    <div className="p-4 md:p-8 lg:p-12 mt-8 bg-[#0a0b1e] text-white min-h-screen">
+    <div className="p-4 md:p-8 lg:p-12 mt-8 bg-[#0a0b1e] text-white min-h-screen ">
       {/* Title Section */}
-      <div className="text-center mb-12">
+      <div className="text-center mb-12 mt-7">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Blogs</h2>
         <div className="w-16 h-1 bg-gradient-to-r from-[#5B4EFF] to-[#32F6FF] mx-auto mb-6"></div>
         <p className="text-gray-400 max-w-2xl mx-auto">
