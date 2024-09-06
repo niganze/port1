@@ -1,9 +1,9 @@
-import { FaGoogle } from "react-icons/fa"; 
-import LoginVectorImage from "../assets/login.png"; 
+import { FaGoogle } from "react-icons/fa";
+import LoginVectorImage from "../assets/login.png";
 
 function Login() {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center min-h-screen bg-[#0a0b1e] p-6">
+    <div className="flex flex-col lg:flex-row items-center justify-center h-screen bg-[#0a0b1e] p-6 overflow-hidden">
       
       {/* Left Side - Image */}
       <div className="hidden lg:block lg:w-1/2 p-6">
@@ -15,7 +15,7 @@ function Login() {
       </div>
 
       {/* Right Side - Form */}
-      <div className="w-full lg:w-1/2 bg-[#1e1e2f] p-8 lg:p-12 rounded-lg shadow-lg space-y-8 animate-fade-in-up">
+      <div className="w-full lg:w-1/2 bg-[#1e1e2f] p-8 lg:p-12 rounded-lg shadow-lg space-y-8 animate-fade-in-up max-h-screen overflow-auto">
         {/* Title */}
         <h2 className="text-3xl lg:text-4xl font-bold text-white text-center mb-4">
           Welcome Back

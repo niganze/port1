@@ -3,6 +3,7 @@ import Resume from "../assets/resume.pdf";
 
 function About() {
   return (
+    <section id="about" className="min-h-screen p-10">
     <div className="flex flex-col md:flex-row items-center py-16 px-8 bg-[#0a0b1e] text-white">
       {/* Image Section */}
       <div className="md:w-1/2 flex justify-center mb-6 md:mb-0">
@@ -53,6 +54,7 @@ function About() {
         </div>
       </div>
     </div>
+    </section>
   );
 }
 
