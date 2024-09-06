@@ -4,6 +4,7 @@ import Layout from "./pages/Layout";
 import Project from "./pages/Projects";
 import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
+import Login from "./pages/Login";
 export default function App() {
   return (
     <>
@@ -15,6 +16,7 @@ export default function App() {
             <Route path="/blog" element={<Blogs />} />
             <Route path="/contact" element={<Contact />} />
           </Route>
+          <Route path="/login" element={<Login/>}/>
         </Routes>
       </BrowserRouter>
     </>

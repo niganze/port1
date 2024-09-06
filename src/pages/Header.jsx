@@ -49,7 +49,7 @@ function Header() {
           <Link to="/projects" className="text-white hover:text-[#32F6FF] transition duration-300">Projects</Link>
           <Link to="/contact" className="text-white hover:text-[#32F6FF] transition duration-300">Contact</Link>
           <Link to="/blog" className="text-white hover:text-[#32F6FF] transition duration-300">Blog</Link>
-          <button className="ml-4 px-5 py-2 bg-gradient-to-r from-[#5B4EFF] to-[#32F6FF] text-white rounded-full hover:opacity-90 transition-opacity duration-300">Login</button>
+           <Link to="/login"><button className="ml-4 px-5 py-2 bg-gradient-to-r from-[#5B4EFF] to-[#32F6FF] text-white rounded-full hover:opacity-90 transition-opacity duration-300">Login</button></Link>
         </nav>
       </div>
 
