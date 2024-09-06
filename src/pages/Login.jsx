@@ -1,5 +1,5 @@
-import { FaGoogle } from "react-icons/fa"; // Icon for Google login
-import LoginVectorImage from "../assets/login.png"; // Example vector image for the left side
+import { FaGoogle } from "react-icons/fa"; 
+import LoginVectorImage from "../assets/login.png"; 
 
 function Login() {
   return (
