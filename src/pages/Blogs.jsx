@@ -61,7 +61,7 @@ function Blogs() {
 
                   {/* View More Button */}
                   <a
-                    href="#"
+                    href="/singleblog"
                     className="text-[#5B4EFF] hover:underline hover:text-[#32F6FF] transition-colors duration-300"
                   >
                     View More

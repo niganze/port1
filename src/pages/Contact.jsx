@@ -2,8 +2,16 @@ function Contact() {
   return (
     <div className="bg-[#0a0b1e] py-16 text-white">
       <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 mt-9">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        {/* Header Section */}
+        <div className="text-center mb-12 animate-fade-in">
+          <h1 className="text-4xl font-bold mb-4 animate-fade-in-up">Get in Touch</h1>
+          <div className="w-16 h-1 bg-gradient-to-r from-[#5B4EFF] to-[#32F6FF] mx-auto mb-6 animate-width-grow"></div>
+          <p className="text-gray-400 max-w-2xl mx-auto animate-fade-in-up delay-2">
+            If you would like to contact me, feel free to send me a message using the form below or reach out through the contact information provided. I’m always open to discussing new projects, creative ideas, or opportunities.
+          </p>
+        </div>
 
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="space-y-8">
             <div className="flex items-start">
