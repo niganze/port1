@@ -6,6 +6,7 @@ import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import SingleBlog from "./pages/SingleBlog";
+import About from "./pages/About";
 export default function App() {
   return (
     <>
@@ -16,7 +17,9 @@ export default function App() {
             <Route path="/projects" element={<Project />} />
             <Route path="/blog" element={<Blogs />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/about"element={<About/>}/>
             <Route path="/singleblog"element={<SingleBlog/>}/>
+
           </Route>
           <Route path="/login" element={<Login/>}/>
           

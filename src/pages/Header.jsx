@@ -21,7 +21,8 @@ function Header() {
           <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-[#5B4EFF] to-[#32F6FF] rounded-full animate-spin">
             <span className="text-white text-lg font-extrabold">AN</span>
           </div>
-          <span className="ml-2 text-xl text-white font-semibold">NIGANZE</span>
+          
+          <Link to="/"><span className="ml-2 text-xl text-white font-semibold">NIGANZE</span></Link>
         </div>
 
         {/* Mobile Menu Icon */}
@@ -76,8 +77,8 @@ function Header() {
               </svg>
             </button>
             <nav className="flex flex-col space-y-6 font-semibold items-center">
-              <Link to="#"  onClick={closeModal} className="text-white text-xl hover:text-[#32F6FF] transition duration-300">Home</Link>
-              <Link to="#" onClick={closeModal} className="text-white text-xl hover:text-[#32F6FF] transition duration-300">About</Link>
+              <Link to="/"  onClick={closeModal} className="text-white text-xl hover:text-[#32F6FF] transition duration-300">Home</Link>
+              <Link to="/about" onClick={closeModal} className="text-white text-xl hover:text-[#32F6FF] transition duration-300">About</Link>
               <Link to="/projects" onClick={closeModal} className="text-white text-xl hover:text-[#32F6FF] transition duration-300">Projects</Link>
               <Link to="/contact" className="text-white hover:text-[#32F6FF] transition duration-300">Contact</Link>
               <Link to="/blog" onClick={closeModal} className="text-white text-xl hover:text-[#32F6FF] transition duration-300">Blog</Link>
