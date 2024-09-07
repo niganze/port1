@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import BlogImage from "../assets/blog.jpeg"; // Example blog image
 import { FaUser, FaRegCalendarAlt, FaEye, FaComment } from "react-icons/fa";
@@ -11,7 +10,8 @@ function Blogs() {
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Blogs</h2>
         <div className="w-16 h-1 bg-gradient-to-r from-[#5B4EFF] to-[#32F6FF] mx-auto mb-6"></div>
         <p className="text-gray-400 max-w-2xl mx-auto">
-          Explore my latest blog posts, featuring various topics in technology, lifestyle, and more.
+          Explore my latest blog posts, featuring various topics in technology,
+          lifestyle, and more.
         </p>
       </div>
 
@@ -57,7 +57,10 @@ function Blogs() {
                   {/* Blog Title and Description */}
                   <h3 className="text-2xl font-bold mb-2">Telescope 101</h3>
                   <p className="text-gray-400 mb-4">
-                    MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
+                    MCSE boot camps have its supporters and its detractors. Some
+                    people do not understand why you should have to spend money
+                    on boot camp when you can get the MCSE study materials
+                    yourself at a fraction.
                   </p>
 
                   {/* View More Button */}
@@ -74,7 +77,9 @@ function Blogs() {
 
         {/* Sidebar - Post Categories */}
         <div className="hidden lg:block lg:w-1/4 bg-[#1e1e2f] p-6 rounded-lg shadow-lg lg:ml-8 mt-12 lg:mt-0">
-          <h3 className="text-xl font-bold mb-4 text-center">Post Categories</h3>
+          <h3 className="text-xl font-bold mb-4 text-center">
+            Post Categories
+          </h3>
           <ul className="text-gray-400 space-y-3">
             <li className="flex justify-between">
               <span>Technology</span>

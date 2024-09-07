@@ -13,7 +13,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Welcome />} />
-            <Route path="#projects" element={<Project />} />
+            <Route path="/projects" element={<Project />} />
             <Route path="/blog" element={<Blogs />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/singleblog"element={<SingleBlog/>}/>

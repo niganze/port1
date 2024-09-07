@@ -4,7 +4,7 @@ import { SiTailwindcss } from "react-icons/si"; // Tailwind CSS icon
 
 function Project() {
   return (
-    <section id="projects" className="min-h-screen p-10">
+    
     <div className="p-4 md:p-8 lg:p-12 mt-8 bg-[#0a0b1e] text-white min-h-screen">
       {/* Title Section */}
       <div className="text-center mb-12 animate-fade-in mt-6">
@@ -66,7 +66,7 @@ function Project() {
         ))}
       </div>
     </div>
-    </section>
+    
   );
 }
 
