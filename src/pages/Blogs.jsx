@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import BlogImage from "../assets/blog.jpeg"; // Example blog image
 import { FaUser, FaRegCalendarAlt, FaEye, FaComment } from "react-icons/fa";
 
@@ -60,12 +61,11 @@ function Blogs() {
                   </p>
 
                   {/* View More Button */}
-                  <a
-                    href="/singleblog"
+                  <Link to="/singleblog"
                     className="text-[#5B4EFF] hover:underline hover:text-[#32F6FF] transition-colors duration-300"
                   >
                     View More
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
