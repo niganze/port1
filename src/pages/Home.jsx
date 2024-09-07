@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom";
 import ProfileImage from "../assets/home.png";
-
+Link
 function Home() {
   return (
     <main className="bg-gradient-to-b from-gray-900 via-gray-900 to-black min-h-screen flex items-center mt-5">
@@ -22,9 +23,9 @@ function Home() {
             tasks to ensure seamless project delivery.
           </p>
 
-          <button className="mt-8 px-8 py-3 bg-gradient-to-r from-purple-400 to-teal-300 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300 animate-bounce">
+          <Link to="/contact" ><button className="mt-8 px-8 py-3 bg-gradient-to-r from-purple-400 to-teal-300 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300 animate-bounce">
             Hire me
-          </button>
+          </button></Link>
         </div>
 
         {/* Image Section */}
