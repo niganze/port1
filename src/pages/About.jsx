@@ -32,7 +32,7 @@ function About() {
           <br />
           <br />
           <span className="text-[#5B4EFF] font-bold">
-            Next.js • React • TypeScript • Tailwind CSS • AWS • GraphQL
+            Next.js • React • TypeScript • Tailwind CSS • AWS • GraphQL • Laravel
           </span>
           <br />
           <br />
