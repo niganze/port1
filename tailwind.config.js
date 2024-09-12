@@ -9,7 +9,7 @@ export default {
       keyframes: {
         typing: {
           '0%': { width: '0ch' },
-          '100%': { width: '12ch' },  // Adjust the width according to the length of the text
+          '100%': { width: '12ch' },
         },
         blink: {
           '50%': { borderColor: 'transparent' },
