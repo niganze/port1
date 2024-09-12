@@ -1,3 +1,5 @@
+import { FaReact, FaAws } from 'react-icons/fa'; 
+import { SiNextdotjs, SiTypescript, SiTailwindcss, SiGraphql, SiLaravel } from 'react-icons/si'; 
 import BB from "../assets/about.jpeg";
 import Resume from "../assets/resume.pdf";
 
@@ -31,9 +33,43 @@ function About() {
           </span>
           <br />
           <br />
-          <span className="text-[#5B4EFF] font-bold">
-            Next.js • React • TypeScript • Tailwind CSS • AWS • GraphQL • Laravel
-          </span>
+          <div className="flex flex-wrap gap-4">
+            {/* Icons and Tech Names */}
+            <div className="flex items-center space-x-2">
+              <SiNextdotjs className="text-[#5B4EFF]" size={24} />
+              <span>Next.js</span>
+            </div>
+
+            <div className="flex items-center space-x-2">
+              <FaReact className="text-[#5B4EFF]" size={24} />
+              <span>React</span>
+            </div>
+
+            <div className="flex items-center space-x-2">
+              <SiTypescript className="text-[#5B4EFF]" size={24} />
+              <span>TypeScript</span>
+            </div>
+
+            <div className="flex items-center space-x-2">
+              <SiTailwindcss className="text-[#5B4EFF]" size={24} />
+              <span>Tailwind CSS</span>
+            </div>
+
+            <div className="flex items-center space-x-2">
+              <FaAws className="text-[#5B4EFF]" size={24} />
+              <span>AWS</span>
+            </div>
+
+            <div className="flex items-center space-x-2">
+              <SiGraphql className="text-[#5B4EFF]" size={24} />
+              <span>GraphQL</span>
+            </div>
+
+            <div className="flex items-center space-x-2">
+              <SiLaravel className="text-[#5B4EFF]" size={24} />
+              <span>Laravel</span>
+            </div>
+          </div>
           <br />
           <br />
           <span className="text-[#32F6FF] font-semibold">
