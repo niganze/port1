@@ -141,7 +141,7 @@ function SingleBlog() {
             />
             <button
               type="submit"
-              className="px-6 py-3 bg-[#5B4EFF] rounded-sm text-white hover:bg-[#32F6FF] transition-colors animate-bounce mt-1"
+              className="bg-gradient-to-r from-[#5B4EFF] to-[#32F6FF] text-white py-3 px-8 rounded-md hover:bg-gradient-to-r hover:from-[#4a3dd1] hover:to-[#27c8db] transition duration-300 animate-bounce mt-5"
             >
               Post Comment
             </button>

@@ -5,7 +5,22 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        typing: {
+          '0%': { width: '0ch' },
+          '100%': { width: '12ch' },  // Adjust the width according to the length of the text
+        },
+        blink: {
+          '50%': { borderColor: 'transparent' },
+        },
+      },
+      animation: {
+        typing: 'typing 2s steps(12) infinite alternate, blink .7s infinite',
+      },
+    },
+  
   },
   plugins: [],
+  
 }
