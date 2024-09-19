@@ -3,8 +3,8 @@ import ProfileImage from "../assets/home.png";
 Link
 function Home() {
   return (
-    <main className="bg-gradient-to-b from-gray-900 via-gray-900 to-black min-h-screen flex items-center mt-5">
-      <div className="container mx-auto px-6 md:px-12 lg:px-24 flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
+    <main className="bg-gradient-to-b from-gray-900 via-gray-900 to-black min-h-screen flex items-center mt-20">
+      <div className="container mx-auto px-6 md:px-12 lg:px-24 flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12 ">
         {/* Text Section */}
         <div className="flex-1 text-center md:text-left animate-fade-in">
           <h1 className="text-xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-blue-500 to-teal-300 animate-gradient-slide">
