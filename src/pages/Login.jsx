@@ -1,5 +1,6 @@
 import { FaGoogle } from "react-icons/fa";
 import LoginVectorImage from "../assets/login.png";
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
@@ -56,12 +57,15 @@ function Login() {
 
           {/* Login Button */}
           <div>
+            <Link to="/dashboard">
             <button
               type="submit"
               className="w-full p-3 bg-gradient-to-r from-[#5B4EFF] to-[#32F6FF] text-white rounded-md font-bold hover:opacity-90 transition-opacity duration-300"
             >
               Log In
             </button>
+            </Link>
+            
           </div>
         </form>
 

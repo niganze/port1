@@ -1,5 +1,6 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import axios from "axios";
 
 function Contact() {
 
@@ -28,9 +29,24 @@ function Contact() {
       message: "",
     },
     validationSchema: validationSchema,
-    onSubmit: (values) => {
-      console.log("Form values:", values);
-      // Handle form submission (e.g., send values to API)
+    onSubmit: async (values, { resetForm }) => {
+      try {
+        // Send form data to the API using Axios
+        const response = await axios.post('https://portbackend-it4o.onrender.com/api/contact', values,
+
+          {
+            headers:{
+              "Content-Type":"application/json"
+            }
+          }
+        );
+        console.log('Form submitted successfully:', response.data);
+        
+        resetForm(); // Reset form fields after successful submission
+      } catch (error) {
+        console.log(error);
+       
+      }
     },
   });
 
