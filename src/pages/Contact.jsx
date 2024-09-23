@@ -169,7 +169,7 @@ function Contact() {
               <div className="text-right">
                 <button
                   type="submit"
-                  className="bg-gradient-to-r from-[#5B4EFF] to-[#32F6FF] text-white py-3 px-8 rounded-md hover:bg-gradient-to-r hover:from-[#4a3dd1] hover:to-[#27c8db] transition duration-300"
+                  className="bg-gradient-to-r from-[#5B4EFF] to-[#32F6FF] text-white py-3 px-8 rounded-md hover:bg-gradient-to-r hover:from-[#4a3dd1] hover:to-[#27c8db] transition duration-300 animate-bounce"
                 >
                   Send Message
                 </button>
