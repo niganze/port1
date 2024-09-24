@@ -1,11 +1,34 @@
+import { useState } from "react";
 import { FaGoogle } from "react-icons/fa";
 import LoginVectorImage from "../assets/login.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+
+  const handleLogin = async (e) => {
+    e.preventDefault(); 
+
+    try {
+      const response = await axios.post("https://portbackend-it4o.onrender.com/login", {
+        email,
+        password,
+      });
+
+      // Handle successful login (e.g., save token, redirect to dashboard)
+      console.log(response.data); // Adjust according to your response structure
+      navigate("/dashboard"); // Redirect to the dashboard on success
+    } catch (error) {
+      console.error("Login error:", error.response ? error.response.data : error.message);
+      // Optionally, show an error message to the user
+    }
+  };
+
   return (
     <div className="flex flex-col lg:flex-row items-center justify-center h-screen bg-[#0a0b1e] p-6 overflow-hidden">
-      
       {/* Left Side - Image */}
       <div className="hidden lg:block lg:w-1/2 p-6">
         <img
@@ -26,7 +49,7 @@ function Login() {
         </p>
 
         {/* Login Form */}
-        <form className="space-y-6">
+        <form className="space-y-6" onSubmit={handleLogin}>
           {/* Email Field */}
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-gray-400 mb-2">
@@ -35,6 +58,8 @@ function Login() {
             <input
               type="email"
               id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               className="w-full p-3 bg-[#2b2b3d] text-white rounded-md focus:outline-none focus:ring-2 focus:ring-[#5B4EFF] focus:border-transparent"
               placeholder="Enter your email"
               required
@@ -49,6 +74,8 @@ function Login() {
             <input
               type="password"
               id="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
               className="w-full p-3 bg-[#2b2b3d] text-white rounded-md focus:outline-none focus:ring-2 focus:ring-[#5B4EFF] focus:border-transparent"
               placeholder="Enter your password"
               required
@@ -57,15 +84,12 @@ function Login() {
 
           {/* Login Button */}
           <div>
-            <Link to="/dashboardg">
             <button
               type="submit"
               className="w-full p-3 bg-gradient-to-r from-[#5B4EFF] to-[#32F6FF] text-white rounded-md font-bold hover:opacity-90 transition-opacity duration-300"
             >
               Log In
             </button>
-            </Link>
-            
           </div>
         </form>
 

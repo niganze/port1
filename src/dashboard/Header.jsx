@@ -6,13 +6,7 @@ function Header() {
     <header className="bg-[#0a0b1e] text-white shadow-md p-4">
       <div className="flex justify-between items-center max-w-7xl mx-auto">
         
-        {/* Logo Section */}
-        <div className="flex items-center space-x-4">
-          <div className="w-10 h-10 bg-gradient-to-r from-[#5B4EFF] to-[#32F6FF] rounded-full flex items-center justify-center">
-            <span className="text-xl font-bold">AN</span>
-          </div>
-          <h1 className="text-xl font-bold">Niganze Dashboard</h1>
-        </div>
+        
 
         {/* Search Bar */}
         <div className="flex items-center bg-[#1e1e2f] p-2 rounded-lg w-1/3">
@@ -26,11 +20,11 @@ function Header() {
 
         {/* Action Icons */}
         <div className="flex items-center space-x-6">
-          <button className="relative hover:text-[#5B4EFF] transition duration-300">
+          <button className="relative hover:text-[#5B4EFF] transition duration-300 ease-in-out">
             <FaBell size={20} />
             <span className="absolute top-0 right-0 inline-block w-2 h-2 bg-red-600 rounded-full"></span>
           </button>
-          <button className="hover:text-[#5B4EFF] transition duration-300">
+          <button className="hover:text-[#5B4EFF] transition duration-300 ease-in-out">
             <FaUserCircle size={28} />
           </button>
         </div>

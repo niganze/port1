@@ -7,9 +7,14 @@ import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import SingleBlog from "./pages/SingleBlog";
 import About from "./pages/About";
-import Dashboard from "./dashboard/LayoutDashboard";
-import ProjectsDash from "./dashboard/ProjectsDash";
+
 import LayoutDashboard from "./dashboard/LayoutDashboard";
+import Dashboard from "./dashboard/Dashboard";
+import Projectdash from "./dashboard/Projectdash";
+import Blogsdash from "./dashboard/Blogsdash";
+import Messages from "./dashboard/Messages";
+import JobExprience from "./dashboard/JobExprience";
+import ServiceDash from "./dashboard/ServiceDash";
 export default function App() {
   return (
     <>
@@ -24,10 +29,15 @@ export default function App() {
             <Route path="/singleblog" element={<SingleBlog />} />
           </Route>
           <Route path="/login" element={<Login />} />
+
+          {/* dashboard */}
           <Route path="/" element={<LayoutDashboard />}>
            <Route index element={<Dashboard/>}/>
-           <Route path="/dashboard" element={<Dashboard/>}/>
-            <Route path="/pro" element={<ProjectsDash />} /> 
+           <Route path="/dashboard" element={<Projectdash/>}/>
+           <Route path="/blogs" element={<Blogsdash/>}/>
+           <Route path="/messages" element={<Messages/>}/>
+           <Route path="/experience" element={<JobExprience/>}/>
+           <Route path="/services" element={<ServiceDash />}/>
           </Route>
 
         </Routes>

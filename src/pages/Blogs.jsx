@@ -80,7 +80,7 @@ function Blogs() {
           <h3 className="text-xl font-bold mb-4 text-center">
             Post Categories
           </h3>
-          <ul className="text-gray-400 space-y-3">
+          <ul className="text-gray-400 space-y-3 cursor-pointer">
             <li className="flex justify-between">
               <span>Technology</span>
               <span>37</span>
