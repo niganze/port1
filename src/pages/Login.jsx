@@ -3,6 +3,8 @@ import { FaGoogle } from "react-icons/fa";
 import LoginVectorImage from "../assets/login.png";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify"; // Import ToastContainer and toast
+import 'react-toastify/dist/ReactToastify.css'; // Import the default styles
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -18,12 +20,13 @@ function Login() {
         password,
       });
 
-      // Handle successful login (e.g., save token, redirect to dashboard)
-      console.log(response.data); // Adjust according to your response structure
+      // Handle successful login
+      console.log(response.data);
+      toast.success("Login successful!"); // Show success toast
       navigate("/dashboard"); // Redirect to the dashboard on success
     } catch (error) {
       console.error("Login error:", error.response ? error.response.data : error.message);
-      // Optionally, show an error message to the user
+      toast.error("Login failed. Please check your credentials."); // Show error toast
     }
   };
 
@@ -104,6 +107,8 @@ function Login() {
           </button>
         </div>
       </div>
+
+      <ToastContainer /> {/* Add ToastContainer for displaying toasts */}
     </div>
   );
 }
