@@ -1,8 +1,17 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
+import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
+
+
 
 function Contact() {
+
+  // Loading state
+  const [isLoading, setIsLoading] = useState(false);
 
   // Define validation schema using Yup
   const validationSchema = Yup.object({
@@ -31,6 +40,8 @@ function Contact() {
     validationSchema: validationSchema,
     onSubmit: async (values, { resetForm }) => {
       try {
+
+        setIsLoading(true);
         // Send form data to the API using Axios
         const response = await axios.post('https://portbackend-it4o.onrender.com/api/contact', values,
 
@@ -40,18 +51,24 @@ function Contact() {
             }
           }
         );
-        console.log('Form submitted successfully:', response.data);
+        // Show success notification
+        toast.success("Message sent successfully!");
         
         resetForm(); // Reset form fields after successful submission
       } catch (error) {
         console.log(error);
-       
+       // Show error notification
+       toast.error("Failed to send message. Please try again.");
+      } finally{
+
+        setIsLoading(false);
       }
     },
   });
 
   return (
     <div className="bg-[#0a0b1e] py-16 text-white">
+      <ToastContainer/>
       <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 mt-9">
         {/* Header Section */}
         <div className="text-center mb-12 animate-fade-in">
@@ -170,8 +187,9 @@ function Contact() {
                 <button
                   type="submit"
                   className="bg-gradient-to-r from-[#5B4EFF] to-[#32F6FF] text-white py-3 px-8 rounded-md hover:bg-gradient-to-r hover:from-[#4a3dd1] hover:to-[#27c8db] transition duration-300 animate-bounce"
+                  disabled={isLoading}
                 >
-                  Send Message
+                  {isLoading ? 'Sending...' : 'Send Message'}
                 </button>
               </div>
             </form>
