@@ -3,30 +3,55 @@ import { FaGoogle } from "react-icons/fa";
 import LoginVectorImage from "../assets/login.png";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import { ToastContainer, toast } from "react-toastify"; // Import ToastContainer and toast
-import 'react-toastify/dist/ReactToastify.css'; // Import the default styles
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [errors, setErrors] = useState({});
   const navigate = useNavigate();
 
+  const validate = () => {
+    const errors = {};
+
+    // Email validation
+    if (!email) {
+      errors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      errors.email = "Email is invalid";
+    }
+
+    // Password validation
+    if (!password) {
+      errors.password = "Password is required";
+    } else if (password.length < 6) {
+      errors.password = "Password must be at least 6 characters";
+    }
+
+    return errors;
+  };
+
   const handleLogin = async (e) => {
-    e.preventDefault(); 
+    e.preventDefault();
+    const validationErrors = validate();
+    setErrors(validationErrors);
 
-    try {
-      const response = await axios.post("https://portbackend-it4o.onrender.com/login", {
-        email,
-        password,
-      });
+    if (Object.keys(validationErrors).length === 0) {
+      try {
+        const response = await axios.post("https://portbackend-it4o.onrender.com/login", {
+          email,
+          password,
+        });
 
-      // Handle successful login
-      console.log(response.data);
-      toast.success("Login successful!"); // Show success toast
-      navigate("/dashboard"); // Redirect to the dashboard on success
-    } catch (error) {
-      console.error("Login error:", error.response ? error.response.data : error.message);
-      toast.error("Login failed. Please check your credentials."); // Show error toast
+        // Handle successful login
+        console.log(response.data);
+        toast.success("Login successful!"); // Show success toast
+        navigate("/dashboard"); // Redirect to the dashboard on success
+      } catch (error) {
+        console.error("Login error:", error.response ? error.response.data : error.message);
+        toast.error("Login failed. Please check your credentials."); // Show error toast
+      }
     }
   };
 
@@ -63,10 +88,14 @@ function Login() {
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full p-3 bg-[#2b2b3d] text-white rounded-md focus:outline-none focus:ring-2 focus:ring-[#5B4EFF] focus:border-transparent"
+              className={`w-full p-3 bg-[#2b2b3d] text-white rounded-md focus:outline-none focus:ring-2 focus:ring-[#5B4EFF] focus:border-transparent ${
+                errors.email ? "border-red-500" : ""
+              }`}
               placeholder="Enter your email"
-              required
             />
+            {errors.email && (
+              <p className="text-red-500 text-sm mt-2">{errors.email}</p>
+            )}
           </div>
 
           {/* Password Field */}
@@ -79,10 +108,14 @@ function Login() {
               id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full p-3 bg-[#2b2b3d] text-white rounded-md focus:outline-none focus:ring-2 focus:ring-[#5B4EFF] focus:border-transparent"
+              className={`w-full p-3 bg-[#2b2b3d] text-white rounded-md focus:outline-none focus:ring-2 focus:ring-[#5B4EFF] focus:border-transparent ${
+                errors.password ? "border-red-500" : ""
+              }`}
               placeholder="Enter your password"
-              required
             />
+            {errors.password && (
+              <p className="text-red-500 text-sm mt-2">{errors.password}</p>
+            )}
           </div>
 
           {/* Login Button */}
