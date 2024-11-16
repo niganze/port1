@@ -1,6 +1,6 @@
 import { FaReact, FaGithub, FaNodeJs } from "react-icons/fa"; 
 import { SiTailwindcss, SiMongodb, SiNextdotjs, SiTypescript } from "react-icons/si"; 
-import projectImg from "../assets/project.jpg";  // Correctly import the image
+import projectImg from "../assets/project.jpg";  
 import giraImg from "../assets/gira.png";  // Importing another image
 import bazaImg from "../assets/baza.png";  // Importing the third image
 
