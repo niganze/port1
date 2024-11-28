@@ -1,4 +1,5 @@
 function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="bg-[#0a0b1e] text-white py-12">
       <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
@@ -53,7 +54,7 @@ function Footer() {
         </div>
 
         <div className="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500">
-          <p>&copy; 2024 Alain Niganze. All rights reserved.</p>
+        <p>&copy; {currentYear} Alain Niganze. All rights reserved.</p>
         </div>
       </div>
     </footer>
