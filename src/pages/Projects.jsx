@@ -103,7 +103,7 @@ function Project() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0a0b1e] text-white py-12 px-6 md:px-16">
+    <div className="min-h-screen bg-[#0a0b1e] text-white py-12 px-8 md:px-16">
       {/* Title Section */}
       <div className="text-center mb-16 mt-8">
         <h2 className="text-4xl font-bold">Projects</h2>
