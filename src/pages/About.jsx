@@ -81,7 +81,7 @@ function About() {
           <button className="px-6 py-2 border border-[#5B4EFF] rounded-full text-[#5B4EFF] hover:bg-[#5B4EFF] hover:text-white transition-colors duration-300">
             More Info
           </button>
-          <a href={Resume} download="Alain_Niganze_Resume.pdf">
+          <a href={Resume} download="Resume.pdf">
             <button className="relative px-6 py-2 bg-[#5B4EFF] text-white rounded-full hover:bg-[#32F6FF] transition-colors duration-300 animate-pulse">
               <span className="inline-block overflow-hidden whitespace-nowrap  pr-2 animate-typing">
                 Download cv
